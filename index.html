@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Linking to external CSS -->
 </head>
 <body>
     <div class="container">
-        <h1>Temperature Converter</h1>
+        <h1>Temperature Converter</h1> <!-- Main heading -->
+
+        <!-- Form for temperature conversion -->
         <form id="tempConverterForm">
             <label for="temperature">Enter Temperature:</label>
-            <input type="number" id="temperature" name="temperature" required>
+            <input type="number" id="temperature" name="temperature" required> <!-- Input field for temperature -->
+
             <label for="unit">Choose Conversion:</label>
-            <select id="unit" name="unit">
+            <select id="unit" name="unit"> <!-- Dropdown for choosing conversion type -->
                 <option value="celsius">Celsius to Fahrenheit</option>
                 <option value="fahrenheit">Fahrenheit to Celsius</option>
             </select>
-            <button type="submit">Konversi</button>
+
+            <button type="submit">Convert</button> <!-- Submit button for conversion -->
         </form>
+
+        <!-- Result container -->
         <div id="resultContainer" class="result">
             <h2>Result:</h2>
-            <p id="conversionResult"></p>
+            <p id="conversionResult"></p> <!-- Result will be displayed here -->
         </div>
+
+        <!-- Explanation container -->
         <div id="explanation" class="result">
             <h2>Explanation:</h2>
-            <p id="explanationText"></p>
+            <p id="explanationText"></p> <!-- Explanation of the conversion will be displayed here -->
         </div>
     </div>
-    <script src="js/script.js"></script>
+
+    <script src="script.js"></script> <!-- Linking to external JavaScript for functionality -->
 </body>
 </html>
