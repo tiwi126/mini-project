@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <form id="tempConverterForm">
+            <label for="temperature">Enter Temperature:</label>
+            <input type="number" id="temperature" name="temperature" required>
+            <label for="unit">Choose Conversion:</label>
+            <select id="unit" name="unit">
+                <option value="celsius">Celsius to Fahrenheit</option>
+                <option value="fahrenheit">Fahrenheit to Celsius</option>
+            </select>
+            <button type="submit">Konversi</button>
+        </form>
+        <div id="resultContainer" class="result">
+            <h2>Result:</h2>
+            <p id="conversionResult"></p>
+        </div>
+        <div id="explanation" class="result">
+            <h2>Explanation:</h2>
+            <p id="explanationText"></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
